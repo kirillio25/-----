@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристік агенттікті автоматтандыру</title>
+    <!-- Bootstrap 5 қосуды -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .carousel-inner img {
+            height: 600px; /* Қалаған биіктікті орнатыңыз */
+            object-fit: cover; /* Пропорцияны сақтай отырып, артық бөлігін кесу */
+        }
+        .card-img-top {
+            height: 200px; /* Қалаған биіктікті орнатыңыз */
+            object-fit: cover; /* Контейнерді толтыру үшін кескінді кесу */
+        }
+        .gallery-img {
+            width: 100%; /* Контейнер ені */
+            max-width: 300px; /* Ең үлкен енін шектеу */
+            height: 200px; /* Белгіленген биіктік */
+            object-fit: cover; /* Кескінді кесіп, қажетті өлшемдерге сәйкес келеді */
+            border: 2px solid #ddd; /* Рамка қосу */
+        }
+
+    </style>
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">TourAutoPro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Навигацияны ауыстыру">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Басты бет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/katon-karagai">Катон-Қарағай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarbagatai">Тарбағатай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/altai-mountains">Алтай таулары</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Негізгі мазмұн -->
+<main class="container mt-5">
+    <div class="text-center mb-5">
+        <h1>Алтай таулары</h1>
+        <p class="lead">Азиядағы тау жүйесі, Сібірдің оңтүстігі мен Орталық Азияда орналасқан, биік және орташа таулы жоталардан тұрады.</p>
+    </div>
+
+    <!-- Кескін -->
+    <div class="mb-4">
+        <img src="/img/a3.jpeg" alt="Орналасқан жер атауы" class="img-fluid rounded place-image w-100">
+    </div>
+
+    <!-- Сипаттама -->
+    <div class="info-section mb-4">
+        <h2>Жалпы сипаттама</h2>
+        <p>Тау жүйесі Ресейдің (Алтай өлкесі, Тыва және Алтай республикалары), Моңғолияның (Баян-Өлгий және Ховд аймақтары), Қытайдың (Шыңжаң-Ұйғыр автономиялық ауданы) және Қазақстанның (Шығыс Қазақстан облысы) шекарасында орналасқан. Алтай таулары Солтүстік Мұзды мұхиттың және Орталық Азияның тұйық бассейнінің арасындағы суайрық болып табылады. Ең биік нүктесі — Белуха тауы (4506 м)[4].
+
+            Алтай қорығы, Катун қорығы және Үкөк жазығы бірге ЮНЕСКО-ның Бүкіләлемдік мұра тізіміне енген «Алтайдың алтын таулары» объектісін құрайды.</p>
+    </div>
+
+    <!-- Туристерге арналған ақпарат -->
+    <div class="info-section mb-4">
+        <h2>Туристерге пайдалы ақпарат</h2>
+        <ul>
+            <li><strong>Қалай жетуге болады:</strong> Таулы Алтай Батыс Сібірдің оңтүстігінде, Ресейде орналасқан. Горно-Алтайск әуежайына ұшақпен жетуге болады, ол Ресейдің ірі қалаларынан рейстер қабылдайды. Сондай-ақ, Барнаулдан (шамамен 250 км) немесе Новосібірден (шамамен 450 км) көлікпен немесе автобуспен жетуге болады. Автокөлікпен саяхаттаушылар үшін М-52 (Чүй тракты) трассасы арқылы әдемі көріністер ұсынылады.</li>
+            <li><strong>Сапарға ең қолайлы уақыт:</strong> Көктем, жаз және күздің басы — Таулы Алтайды көруге ең жақсы мезгілдер. Бұл кезеңдерде табиғат әртүрлілігімен қуантады, трекингке арналған көптеген маршруттар бар, ал өзендер мен көлдер таза сумен толады. Қыс мезгілінде аймақ тау шаңғысы мен қысқы демалысты ұнататындарға тартымды.</li>
+            <li><strong>Ұсыныстар:</strong>
+                <ul>
+                    <li>Белсенді демалысқа арналған ыңғайлы киім мен аяқ киім, жылы күрте (әсіресе кешкі серуендер үшін) және күннен қорғайтын көзілдірік алыңыз.</li>
+                    <li>Демалыс базаларында, қонақ үйлерде, туристік лагерлерде немесе жергілікті мәдениетке толық ену үшін киіз үйлерде тоқтауға болады.</li>
+                    <li>Телецк көлі, Үкөк жазығы, Катунь және Алтайдың ең биік нүктесі Белуха тауындай көрікті жерлерге барыңыз.</li>
+                    <li>Көрікті пейзаждарды түсіру үшін фотоаппаратты ұмытпаңыз, сондай-ақ қауіпсіздік үшін дәрі-дәрмек қобдишасы мен жәндіктерден қорғайтын құралдарды алыңыз.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- Галерея -->
+    <div class="info-section mb-4">
+        <h2>Галерея</h2>
+        <div class="row g-3">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="/img/a1.jpg" alt="Фото 1" class="img-fluid rounded gallery-img">
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="/img/a2.jpeg" alt="Фото 2" class="img-fluid rounded gallery-img">
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="/img/a3.jpeg" alt="Фото 3" class="img-fluid rounded gallery-img">
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Аяқталым -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3">
+        © 2024 TourAutoPro:
+        <a class="text-dark" href="#">курстық жұмыс</a>
+    </div>
+</footer>
+
+<!-- Bootstrap JS қосуды -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

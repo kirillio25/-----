@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристік агенттікті автоматтандыру</title>
+    <!-- Bootstrap 5 қосуды -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+        .carousel-inner img {
+            height: 600px; /* Қалаған биіктікті орнатыңыз */
+            object-fit: cover; /* Пропорцияны сақтай отырып, артық бөлігін кесу */
+        }
+        .card-img-top {
+            height: 200px; /* Қалаған биіктікті орнатыңыз */
+            object-fit: cover; /* Контейнерді толтыру үшін кескінді кесу */
+        }
+
+        .gallery-img {
+            width: 100%; /* Контейнер ені */
+            height: 200px; /* Белгіленген биіктік */
+            object-fit: cover; /* Кескінді кесіп, қажетті өлшемдерге сәйкес келеді */
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">TourAutoPro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Навигацияны ауыстыру">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Басты бет</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/katon-karagai">Катон-Қарағай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarbagatai">Тарбағатай</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/altai-mountains">Алтай таулары</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Негізгі мазмұн -->
+<main class="container mt-5">
+    <div class="text-center mb-5">
+        <h1>Катон-Қарағай</h1>
+        <p class="lead">Катон-Қарағай (қаз. Қатонқарағай) — Қазақстанның Шығыс Қазақстан облысындағы Катон-Қарағай ауданындағы ауыл.</p>
+    </div>
+
+    <!-- Кескін -->
+    <div class="mb-4">
+        <img src="/img/k2.png" alt="Орналасқан жер атауы" class="img-fluid rounded place-image w-100">
+    </div>
+
+    <!-- Сипаттама -->
+    <div class="info-section mb-4">
+        <h2>Жалпы сипаттама</h2>
+        <p>Сарымсақ өзенінің (қаз. Сарымсақты өзені) аңғарында, Сарымсақты тау жотасының солтүстік баурайында орналасқан. Ауыл арқылы Үлкен Нарын — Рахман бұлақтары шипажайына дейінгі автокөлік жолы өтеді.</p>
+    </div>
+
+    <!-- Туристерге арналған ақпарат -->
+    <div class="info-section mb-4">
+        <h2>Туристерге пайдалы ақпарат</h2>
+        <ul>
+            <li><strong>Қалай жетуге болады:</strong> Катон-Қарағай Қазақстанның шығысында, Алтай тауларында орналасқан. Усть-Каменогорскіден (шамамен 330 км) автокөлікпен жетуге болады. Сондай-ақ, облыстың ірі қалаларынан, мысалы, Усть-Каменогорскіден автобус рейстері бар. Ең жақын әуежай — Усть-Каменогорск, ол жерден такси немесе қалааралық автобуспен жетуге болады.</li>
+            <li><strong>Сапарға ең қолайлы уақыт:</strong> Көктем мен жаз — табиғат гүлденген кезде және жаяу жүру маршруттары қолжетімді болған уақыт. Күз жапырақтарының алуан түстерімен таң қалдырады, ал қыс қарлы пейзаждар мен қысқы туризмді ұнататындарға жарайды.</li>
+            <li><strong>Ұсыныстар:</strong>
+                <ul>
+                    <li>Жаяу серуендеуге арналған ыңғайлы аяқ киім, жылы киім (тауда ауа райы өзгермелі) және жәндіктерге қарсы құралдарды алуды ұмытпаңыз.</li>
+                    <li>Табиғи көрікті жерлерге жақын орналасқан демалыс үйлерінде немесе қонақ үйлерде тоқтауға болады.</li>
+                    <li>Жергілікті асхананың дәмін, соның ішінде қазақтың дәстүрлі тағамдарын көріңіз.</li>
+                    <li>Марқакөл көлі, Рахман бұлақтары және таңғажайып көріністері бар тау жоталарын тамашалауды ұмытпаңыз.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Галерея -->
+    <div class="info-section mb-4">
+        <h2>Галерея</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <img src="/img/k1.jpg" alt="Фото 1" class="img-fluid rounded gallery-img">
+            </div>
+            <div class="col-md-4">
+                <img src="/img/k4.jpeg" alt="Фото 2" class="img-fluid rounded gallery-img">
+            </div>
+            <div class="col-md-4">
+                <img src="/img/k3.jpeg" alt="Фото 3" class="img-fluid rounded gallery-img">
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Аяқталым -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3">
+        © 2024 TourAutoPro:
+        <a class="text-dark" href="#">курстық жұмыс</a>
+    </div>
+</footer>
+
+<!-- Bootstrap JS қосуды -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
